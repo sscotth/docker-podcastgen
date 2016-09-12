@@ -13,6 +13,7 @@ if [[ ! -d $DIR ]]; then
 	wget -O /tmp/podcastgen.zip https://sourceforge.net/projects/podcastgen/files/latest/download
 	[[ $? -eq 0 ]] || { ERR "Failed to download podcastgen, aborting."; exit 1; }
 	unzip -v -o -f -d /var/www /tmp/podcastgen.zip
+	ls -la /var/www
 	[[ -d $DIR ]] || { ERR "Directory $DIR does not exist, aborting."; exit 1; }
 	chown -R www-data:www-data /var/www/
 fi
