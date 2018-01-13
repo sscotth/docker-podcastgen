@@ -2,8 +2,7 @@
 
 . /app/lib/common.sh
 
-CHECK_BIN "wget"
-CHECK_BIN "unzip"
+CHECK_BIN "git"
 CHECK_BIN "uwsgi"
 
 DIR=/var/www/PodcastGenerator-master
