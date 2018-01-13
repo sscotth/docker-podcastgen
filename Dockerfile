@@ -1,6 +1,6 @@
 FROM chambana/uwsgi-php:latest
 
-MAINTAINER Josh King <jking@chambana.net>
+MAINTAINER Scott Humphries <docker@sscotth.io>
 
 RUN apt-get -qq update && \
 	apt-get install -y --no-install-recommends ca-certificates git && \
