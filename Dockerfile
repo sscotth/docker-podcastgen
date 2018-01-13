@@ -3,7 +3,7 @@ FROM chambana/uwsgi-php:latest
 MAINTAINER Scott Humphries <docker@sscotth.io>
 
 RUN apt-get -qq update && \
-	apt-get install -y --no-install-recommends ca-certificates git && \
+	apt-get install -y --no-install-recommends ca-certificates git-core && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 
